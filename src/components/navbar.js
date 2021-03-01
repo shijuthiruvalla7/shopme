@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function Navbar() {
     return (
-        <div className="p-0 m-0 position-relative">
+        <div className="p-0 m-0 position-absolute" style={{width:"100%"}}>
             <div className="row p-0 m-0 feedbackrow">
                 <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 feedbackcol" >
                     <p className="h1 m-0 feedbackrowp1">STAY WITH US</p>
@@ -42,14 +42,13 @@ export default function Navbar() {
                 </div>
             </div>
 
-
-
-            <div className="row p-0 m-0 design_info_row">
+            <div className="row p-0 m-0">
                 <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 copyright_div">
-                    <p className="h6">All rights are reserved @2021 by Shiju S</p>
-                    <p className="h6" style={{marginLeft:"auto"}}>Designed and Developed by Shiju S</p>
-                </div>
+                        <p className="h6">All rights are reserved @2021 by Shiju S</p>
+                        <p className="h6" style={{marginLeft:"auto"}}>Designed and Developed by Shiju S</p>
+                    </div>
             </div>
+
         </div>
     )
 }

@@ -5,10 +5,11 @@ import logo from '../images/logo.png'
 export default function Header() {
 
     const[top,setTop]=useState("-10")
+    const[sidenav,setSideNav]=useState("-100%")
 
 
     return (
-        <div className="postion-relative ">
+        <div className="postion-relative">
             <div className="row red-row m-0 p-0">
 
             </div>
@@ -20,7 +21,7 @@ export default function Header() {
             </div>
             
             <div className="row row-nav m-0">
-                <a href="#"><img className="logo ml-4" src={logo} alt="logo.png"/></a>
+                <a href="#" onClick={()=>{setSideNav("0")}}><img className="logo ml-4" src={logo} alt="logo.png"/></a>
                 <li>
                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     TOP OFFERS
@@ -83,7 +84,101 @@ export default function Header() {
                 <a  className="cart-icn" href="#"><box-icon name='cart-alt'></box-icon></a>
                 <a  href="#"><p className="h6 ml-3 mb-0 text-muted">Join/Register</p></a>
             </div>
-            
+            <div className="side-nav-bar position-absolute" style={{left:sidenav}}>
+                <div style={{height:"10vh",width:"100%",backgroundColor:"#E31B23",display:"flex",alignItems:"center"}}>
+                        <span style={{marginRight:"2%",marginLeft:"auto"}}>
+                        <a href="#" onClick={()=>{setSideNav("-100%")}}>
+                        <box-icon name='arrow-back' color='#ffffff'></box-icon>
+                        </a>
+                        </span>
+
+                </div>
+
+                    <div id="main">
+
+                        <div className="card">
+                            <div className="card-header">
+                                <a href="#collapsetopoffer" className="card-link" data-toggle="collapse">
+                                    <p className="sidenav-header">Top Offers</p>
+                                </a>
+                            </div>
+
+                            <div id="collapsetopoffer" className="collapse show" data-parent="#main">
+                                <div className="class-card">
+                                    <p className="sidenav-body"><a onClick={()=>{setSideNav("-100%")}} href="#">Best Deal</a></p>
+                                    <p className="sidenav-body"><a onClick={()=>{setSideNav("-100%")}} href="#">Best Deal</a></p>
+                                    <p className="sidenav-body"><a onClick={()=>{setSideNav("-100%")}} href="#">Best Deal</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <div className="card-header">
+                                <a href="#collapsebestpicks" className="collapsed card-link" data-toggle="collapse">
+                                    <p className="sidenav-header">Best Picks</p>
+                                </a>
+                            </div>
+
+                            <div id="collapsebestpicks" className="collapse show" data-parent="#main">
+                                <div className="class-card">
+                                    <p className="sidenav-body"><a onClick={()=>{setSideNav("-100%")}} href="#">Best Deal</a></p>
+                                    <p className="sidenav-body"><a onClick={()=>{setSideNav("-100%")}} href="#">Best Deal</a></p>
+                                    <p className="sidenav-body"><a onClick={()=>{setSideNav("-100%")}} href="#">Best Deal</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <div className="card-header">
+                                <a href="#collapseelectronics" className="collapsed card-link" data-toggle="collapse">
+                                    <p className="sidenav-header">Electrtonics</p>
+                                </a>
+                            </div>
+
+                            <div id="collapseelectronics" className="collapse show" data-parent="#main">
+                                <div className="class-card">
+                                    <p className="sidenav-body"><a onClick={()=>{setSideNav("-100%")}} href="#">Best Deal</a></p>
+                                    <p className="sidenav-body"><a onClick={()=>{setSideNav("-100%")}} href="#">Best Deal</a></p>
+                                    <p className="sidenav-body"><a onClick={()=>{setSideNav("-100%")}} href="#">Best Deal</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div className="card">
+                            <div className="card-header">
+                                <a href="#collapsemen" className="collapsed card-link" data-toggle="collapse">
+                                    <p className="sidenav-header">Electrtonics</p>
+                                </a>
+                            </div>
+
+                            <div id="collapsemen" className="collapse show" data-parent="#main">
+                                <div className="class-card">
+                                    <p className="sidenav-body"><a onClick={()=>{setSideNav("-100%")}} href="#">Best Deal</a></p>
+                                    <p className="sidenav-body"><a onClick={()=>{setSideNav("-100%")}} href="#">Best Deal</a></p>
+                                    <p className="sidenav-body"><a onClick={()=>{setSideNav("-100%")}} href="#">Best Deal</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <div className="card-header">
+                                <a href="#collapsewomen" className="collapsed card-link" data-toggle="collapse">
+                                    <p className="sidenav-header">Electrtonics</p>
+                                </a>
+                            </div>
+
+                            <div id="collapsewomen" className="collapse show" data-parent="#main">
+                                <div className="class-card">
+                                    <p className="sidenav-body"><a onClick={()=>{setSideNav("-100%")}} href="#">Best Deal</a></p>
+                                    <p className="sidenav-body"><a onClick={()=>{setSideNav("-100%")}} href="#">Best Deal</a></p>
+                                    <p className="sidenav-body"><a onClick={()=>{setSideNav("-100%")}} href="#">Best Deal</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
 
         </div>
     )

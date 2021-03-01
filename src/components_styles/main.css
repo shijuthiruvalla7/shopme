@@ -3,3 +3,104 @@
     width: 100%;
     background-color: rgb(255, 255, 255);
 }
+
+.offer-tag{
+    top: 55%;
+    left: 58%;
+    color: white;
+    font-size: 5rem;
+}
+
+.image-option:hover{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    transition: 0.5s ease-in-out;
+    z-index: 2;
+}
+
+.cat-name{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 3rem;
+    z-index: 1;
+    -webkit-user-select: none;
+}
+
+.cat-name:hover{
+    color: #E31B23;
+}
+
+
+
+@media(max-width:1024px){
+
+    .offer-tag{
+        font-size: 4rem;
+        top: 35%;
+        left: 58%;
+    }
+
+    .cat-name{
+        font-size: 3rem;
+    }
+}
+
+
+
+
+@media(max-width:768px){
+
+    .offer-tag{
+        font-size: 3rem;
+        top: 35%;
+        left: 58%;
+    }
+
+    .cat-name{
+        font-size: 2.5rem;
+    }
+    
+}
+
+
+
+
+@media(max-width:540px){
+
+    .offer-tag{
+        font-size: 2rem;
+        top: 35%;
+        left: 58%;
+    }
+    .cat-name{
+        font-size: 2rem;
+    }
+
+}
+
+
+@media(max-width:420px){
+    .offer-tag{
+        font-size: 1.4rem;
+        top: 31%;
+        left: 58%;
+    }
+    .cat-name{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+@media(max-width:360px){
+    .offer-tag{
+        font-size: 1.1rem;
+        top: 31%;
+        left: 58%;
+    }
+    .cat-name{
+        font-size: 1.2rem;
+    }
+}

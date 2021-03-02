@@ -1,0 +1,143 @@
+.text-row1{
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.text-row2{
+    justify-content: center;
+    font-weight: 500;
+}
+
+
+.form-main{
+    width: 80%;
+    margin: auto;
+}
+
+.login-button{
+    border: none;
+    background-color: black;
+    width: 100%;
+    font-size: 1.3rem;
+    color: white;
+    transition: .5s ease;
+}
+
+.login-button:hover{
+    background-color: #E31B23;
+    font-size: 1.3rem;
+}
+
+.register-button{
+    width: 100%;
+    background-color: white;
+    font-size: 1.3rem;
+    border: rgba(0, 0, 0, 0.253) solid 1px;
+    transition: .5s ease;
+
+}
+
+.facebook-button{
+    width: 100%;
+    background-color: #3d538f;
+    font-size: 1.3rem;
+    border: none;
+    color: white;
+
+}
+
+.google-button{
+    width: 100%;
+    background-color: #cf4639;
+    font-size: 1.3rem;
+    border: none;
+    color: white;
+
+}
+
+.register-button:hover{
+    background-color: #E31B23;
+    color: white;
+}
+
+
+@media(max-width:1024px){
+    .create-info{
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media(max-width:768px){
+    .create-info{
+        font-size: 0.7rem;
+    }
+    
+}
+
+
+@media(max-width:540px){
+    .form-main{
+        width: 100%;
+        margin: auto;
+    }
+    .form-main-row{
+        margin-left: 1rem !important;
+        margin-right: 1rem !important ;
+    }
+    
+    
+    .terms-agree{
+        font-size: .7rem;
+    }
+}
+
+
+@media(max-width:420px){
+
+    .create-info{
+        font-size: 0.7rem;
+    }
+
+    .form-main{
+        width: 100%;
+        margin: auto;
+    }
+    .form-main-row{
+        margin-left: 1rem !important ;
+        margin-right: 1rem !important ;
+    }
+    
+    
+    .terms-agree{
+        font-size: .7rem;
+    }
+    
+}
+
+
+@media(max-width:360px){
+
+    .create-info{
+        font-size: 0.6rem;
+    }
+
+
+    .form-main{
+        width: 100%;
+        margin: auto;
+    }
+
+    .form-main-row{
+        margin-left: 1rem !important ;
+        margin-right: 1rem !important ;
+    }
+    
+    .terms-agree{
+        font-size: .5rem;
+    }
+
+
+}
+

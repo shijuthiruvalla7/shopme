@@ -20,7 +20,7 @@ export default function Header() {
                 </form>
             </div>
             
-            <div className="row row-nav m-0">
+            <div className="row row-nav m-0" style={{zIndex:"2"}}>
                 <a href="#" onClick={()=>{setSideNav("0")}}><img className="logo ml-4" src={logo} alt="logo.png"/></a>
                 <li>
                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

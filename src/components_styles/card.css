@@ -1,4 +1,4 @@
-.main{
+.main-card{
     width: 150px;
     height: 190px;
     border-radius: 5%;
@@ -79,7 +79,7 @@ logo-image{
 }
 
 @media(max-width:360px){
-    .main{
+    .main-card{
         width: 100px;
         height: 165px;
     }

@@ -5,7 +5,7 @@ import iphone from '../images/iphone.png'
 export default function card() {
     return (
         <Tilt className="Tilt" options={{max:35,easing:"cubic-bezier(.03,.98,.52,.99)"}} >
-            <div className="main ">
+            <div className="main-card ">
                 <div className="row first-row d-flex">
                         <div className="image-div" style={{display:"flex",justifyContent:"center"}}>
                             <img src={iphone} alt="iphone12" className="logo-image"/>
